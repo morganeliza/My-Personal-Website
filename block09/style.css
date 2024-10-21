@@ -1,3 +1,76 @@
-h1 {font-family: 'Courier New', Courier, monospace;}
-h1 {font-size: 18px;}
-div {font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+div {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+
+header {
+
+    position: fixed;
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 80px;
+    width: 100%;
+    
+}
+
+.container {
+    height: 40em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    flex-direction: column;
+}
+
+.item {
+    width: 10em;
+}
+
+.footer {
+    height: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e9dada;
+    flex-direction: column;
+
+}
+
+p {
+    color: #aca9a9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+}
+
+nav p {
+    color: black;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+
+
+}
+
+#links {
+
+    display: flex;
+    justify-content: right;
+    margin-right: 40px;
+    float: right;
+    
+
+}
+
+#current {
+    border-color: #ffffff;
+}
+a:hover {
+
+    border: #0d1110;
+    border-style: dotted;
+}

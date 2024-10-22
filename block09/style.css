@@ -10,7 +10,7 @@ header {
     margin-right: 0px;
     height: 80px;
     width: 100%;
-    
+
 }
 
 .container {
@@ -56,21 +56,52 @@ nav p {
 
 }
 
-#links {
+.links {
 
     display: flex;
     justify-content: right;
     margin-right: 40px;
     float: right;
-    
+
 
 }
+
 
 #current {
-    border-color: #ffffff;
+    border: red;
+    border-style: dotted;
+    color: red;
+    order: 1;
 }
+
 a:hover {
 
     border: #0d1110;
     border-style: dotted;
+    color: black;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+}
+
+#message {
+    padding: 100px;
+    text-align: start;
+    justify-content: flex-start;
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+@media (max-width:600px) {
+    .container {
+        background-color: red;
+    }
+}
+@media (max-width:768px) {
+    .container {
+        background-color: red;
+    }
 }

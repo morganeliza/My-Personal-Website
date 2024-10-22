@@ -1,27 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Contact</title>
+    <title>Contact Me</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="javascript.js"></script>
 </head>
+
 <body>
     <header>
         <nav>
-            <img style="float: left; width: 65px; padding: 5px;"  src="images/leicacamera.png" alt="Camera">
-            <h1 style=" background-color: rgb(215, 218, 219); padding: 15px 450px 15px 3px;">Morgan MacCarthy
-                <a style="float: right;"  href="home.html">Home</a>
-                <a style="float: right;"  href="about.html">About</a>
-                <a style="float: right;"  href="portfolio.html">Portfolio</a>
-            </h1>
-            <table>
-                <div style="background-color: antiquewhite; padding: 15px 450px 15px 3px;">Developer, Photo Editor, Cat
-                    Owner
-                </div>
-            </table>
+
+            <div style="background-color: rgb(215, 218, 219); padding: 5px;">
+                <img style="float: left; width: 100px; padding: 5px;" src="images/leicacamera.png" alt="Camera">
+                <p>Morgan MacCarthy</p>
+                <a class="links" href="home.html">Home</a>
+                <a class="links" href="about.html">About</a>
+                <a class="links" href="portfolio.html">Portfolio</a>
+                <a class="links" id="current" href="contact.html">Contact Me</a>
+            </div>
+            <div style="background-color:#e9dada; padding: 15px 450px 15px 3px;">Developer, Photo Editor, Cat
+                Owner
+            </div>
         </nav>
     </header>
-    
+    <main>
+        <div class="container">
+            <form id="form" action="mailto@maccarthymorgan1@gmail.com" method="post">
+                <label style="color: white;" for="name">Name</label><input type="text" name="name" id="Name">
+                <br>
+                <label style="color: white;" for="email">Email</label><input type="email" name="email" id="Email">
+                <br>
+                <label style="color: white;" for="message">Message</label><textarea name="message"
+                    id="message">Type your message here:</textarea>
+                    <br>
+                <button style="padding: 10px; color: rgb(12, 84, 60);" type="submit">Submit</button>
+            </form>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            <a href="https://www.linkedin.com/in/morgan-maccarthy/" target="_blank">
+                <img style="width: 50px;" src="images/linkedin.png" alt=""></a>
+        </div>
+    </footer>
 </body>
+
 </html>
